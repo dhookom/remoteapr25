@@ -1,0 +1,13 @@
+name: Variables Demo
+run-name: testing env variable
+
+on: [push]
+
+env: 
+  owner_name: Abhi
+
+jobs:
+  use_env_var:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "job use_env_var execustion - from $owner_name"
