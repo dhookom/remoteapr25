@@ -1,0 +1,11 @@
+name: GitHub actions demo
+run-name: Testign basic workflow
+
+on: [push]
+
+jobs:
+  basic_workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Job basic_workflow exec as part of new workflow"
+      
